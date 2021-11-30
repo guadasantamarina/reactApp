@@ -1,4 +1,6 @@
 import Button from 'react-bootstrap/Button';
+import CartWidget from './CartWidget';
+
 const NavBar = () => {
     return (
     <nav className="nav">
@@ -22,6 +24,7 @@ const NavBar = () => {
                     <a href="#">Cart</a>
                 </Button>            </li>
         </ul>
+        <CartWidget/>
     </nav>
     )
 }
