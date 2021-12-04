@@ -53,5 +53,47 @@ li, a{
     padding: 5%;
 }
 
+.counterDiv{
+    margin: 5%;
+    border: royalblue 2px solid;
+    border-radius: 10px;
+    width: 12rem;
+}
+
+.counter{
+    border: royalblue 1px solid;
+    border-radius: 10px;
+    margin: 7%;
+    text-align: center;
+    padding: 3%;
+}
+
+.btnsCounter{
+    margin: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.btnCounter{
+    font-size: 1rem;
+    color: aliceblue;
+    background-color: royalblue;
+    border: none;
+    width: 3.5rem;
+    border-radius: 100%;
+    padding: 10%;
+}
+
+.btnAddToCart{
+    font-size: 1rem;
+    color: aliceblue;
+    background-color: royalblue;
+    border: none;
+    width: 100%;
+    padding: 5%;
+
+}
+
 
 
