@@ -26,6 +26,7 @@ ul{
     list-style: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     
 }
 
@@ -99,23 +100,50 @@ li, a{
     background-color: royalblue;
     border: none;
     border-radius: 15px;
-    width: 15rem;
-    height: 10rem;
+    width: 250px;
+    height: 15rem;
     margin: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  
 }
 
-.titleProduct, .priceProduct{
+.titleProduct, .priceProduct, .detailTitle, .detailPrice{
     color: aliceblue;
-    width: 2rem;
+    font-size: 2rem;
     text-align: center;
     padding: 5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.detailLink{
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    margin: 3%;;
+}
 
+.detailContainer{
+    background-color: royalblue;
+    border: none;
+    border-radius: 15px;
+    width: 300px;
+    height: 20rem;
+    margin: 5%;
+}
+
+.detailDescription{
+    color: aliceblue;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.detailColorAndSize{
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    justify-content: space-around;
+}
 
 
 

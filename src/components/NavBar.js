@@ -1,28 +1,24 @@
 import Button from 'react-bootstrap/Button';
 import CartWidget from './CartWidget';
+import { NavLink, Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
     <nav className="nav">
-        <h1 id="title">Cap/tion</h1>
+        <NavLink to="/">
+            <h1 id="title">Cap/tion</h1>
+        </NavLink>
         <ul>
             <li>
                 <Button variant="light" className="btn" >
-                    <a href="#">Caps</a>
+                    <Link to="/category/caps">Caps</Link>
                 </Button>
             </li>
             <li>
                 <Button variant="light" className="btn">
-                    <a href="#">About Us</a>
-                </Button>            </li>
-            <li>
-                <Button variant="light" className="btn">
-                    <a href="#">Contact</a>
-                </Button>            </li>
-            <li>
-                <Button variant="light" className="btn">
-                    <a href="#">Cart</a>
-                </Button>            </li>
+                    <Link to="/category/winter">Winter Hats</Link>
+                </Button>            
+            </li>
         </ul>
         <CartWidget/>
     </nav>
