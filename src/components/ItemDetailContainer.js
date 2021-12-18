@@ -1,42 +1,33 @@
 import { useEffect, useState } from 'react';
-import ItemDetail from './ItemDetail'
+import ItemDetail from './ItemDetail';
+import { Products } from '../mocks/Products';
+import { useParams } from 'react-router';
 
 const ItemDetailContainer = () => {
 
-    const [detail, setDetail] = useState({});
+    const {id} = useParams();
 
-    const LADetails = {
-        id: 1,
-        name: "L.A",
-        img: "../../public/LA.jpeg",
-        description: "Vintage light blue cap, 'L.A' printed",
-        color: "Light blue",
-        size: "Regular",
-        onsale: false,
-        price: 5,
-        stock: 10,
-    }
-
-    
+    const [detail, setDetail] = useState([]);
 
     useEffect(() => {
-
         const promise = new Promise ((res, rej) => {
             setTimeout(() => {
-                res(LADetails)
-                rej()   
+                if (id) {
+                    const filter = Products.filter((x) => x.id === Number(id));
+                    res(filter)
+                }else {
+                    res(Products)
+                }
             }, 2000)
         })
-
+    
         promise
         .then((result) => {
-            console.log(result)
             setDetail(result)
-
         })
         .catch (() => {
         })
-    },[])
+    },[id])
 
     return <ItemDetail img={detail.img} name={detail.name} description={detail.description} color={detail.color} size={detail.size} price={detail.price}/>
 }
