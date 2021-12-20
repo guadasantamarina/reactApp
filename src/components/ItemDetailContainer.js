@@ -24,12 +24,15 @@ const ItemDetailContainer = () => {
         promise
         .then((result) => {
             setDetail(result)
+            console.log(detail)
         })
         .catch (() => {
         })
     },[id])
 
-    return <ItemDetail img={detail.img} name={detail.name} description={detail.description} color={detail.color} size={detail.size} price={detail.price}/>
-}
 
+
+    return detail ? <ItemDetail detail = {detail[0]}/> : <p> Cargando.. </p>
+}
+    
 export default ItemDetailContainer;

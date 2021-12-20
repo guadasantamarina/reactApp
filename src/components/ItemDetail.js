@@ -1,13 +1,14 @@
-const ItemDetail = ({name, description, color, size, price}) => {
+const ItemDetail = ({detail}) => {
+    console.log(detail)
     return <>
         <div className = "detailContainer">
-            <h1 className = "detailTitle">{name}</h1>
-            <h2 className = "detailDescription">{description}</h2>
+            <h1 className = "detailTitle">{detail.name}</h1>
+            <h2 className = "detailDescription">{detail.description}</h2>
             <div className="detailColorAndSize">
-                <p>Color: {color}</p>
-                <p>Size: {size}</p>
+                <p>Color: {detail.color}</p>
+                <p>Size: {detail.size}</p>
             </div>
-            <h2 className ="detailPrice">{price}</h2>
+            <h2 className ="detailPrice">{detail.price}</h2>
         </div>
     </>
 }
