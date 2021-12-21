@@ -2,6 +2,7 @@ const ItemDetail = ({detail}) => {
     console.log(detail)
     return <>
         <div className = "detailContainer">
+            <img src = {detail.img} className ="imgProduct"/>
             <h1 className = "detailTitle">{detail.name}</h1>
             <h2 className = "detailDescription">{detail.description}</h2>
             <div className="detailColorAndSize">

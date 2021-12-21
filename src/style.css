@@ -101,8 +101,9 @@ li, a{
     border: none;
     border-radius: 15px;
     width: 250px;
-    height: 15rem;
+    height: 28rem;
     margin: 5%;
+    text-align: center;
   
 }
 
@@ -116,17 +117,17 @@ li, a{
 
 .detailLink{
     width: 100%;
-    text-align: center;
-    color: aliceblue;
-    margin: 3%;;
+    color: royalblue;
+    background-color: aliceblue;
 }
 
 .detailContainer{
+    text-align: center;
     background-color: royalblue;
     border: none;
     border-radius: 15px;
     width: 300px;
-    height: 20rem;
+    height: 33rem;
     margin: 5%;
 }
 
@@ -146,8 +147,10 @@ li, a{
 }
 
 .imgProduct{
-    width: 2rem;
-}
+    width: 10rem ;
+    border-radius: 10px;
+    margin: 5%;
+} 
 
 
 

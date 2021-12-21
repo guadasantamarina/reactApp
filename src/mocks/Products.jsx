@@ -58,7 +58,7 @@ export const Products = [
 
     {   id:4,
         name:'Pacsun',
-        img: images[3], 
+        img: images[5], 
         category:'winter',
         description: 'Bright Green Wool Winter Hat, ',
         color: 'Bright Green',

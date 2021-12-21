@@ -32,7 +32,7 @@ const ItemDetailContainer = () => {
 
 
 
-    return detail ? <ItemDetail detail = {detail[0]}/> : <p> Cargando.. </p>
+    return detail.length ? <ItemDetail detail = {detail[0]}/> : <p> Cargando.. </p>
 }
     
 export default ItemDetailContainer;

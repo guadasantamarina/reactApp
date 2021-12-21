@@ -1,6 +1,5 @@
 import Nav from './components/NavBar'
 import Main from  './components/Main';
-
 import {BrowserRouter} from "react-router-dom"
 
 const App = () => {
@@ -8,7 +7,6 @@ const App = () => {
         <BrowserRouter>
             <Nav/>
             <Main/>
-            
         </BrowserRouter>
     )
 }
