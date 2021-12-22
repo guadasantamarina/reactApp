@@ -1,4 +1,3 @@
-import ItemCount from './ItemCount';
 import { useEffect, useState } from 'react';
 import ItemList from './ItemList';
 import { useParams } from 'react-router';
@@ -39,17 +38,13 @@ const ItemListContainer = () =>{
         })
     },[id])
 
-    
-    const addToCart = () => {
-        console.log("Agregaste el producto al carrito");
-    }
+
 
     return <>
         <div className="greeting">
             {message}
         </div>
         <ItemList products={products}></ItemList>
-        <ItemCount stock={10} onAdd={addToCart} initial={1}></ItemCount>
     </>
 
 }
