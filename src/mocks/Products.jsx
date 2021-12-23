@@ -10,7 +10,9 @@ export const Products = [
         size: "Regular",
         onsale: false,
         price: 5,
-        stock: 10,},
+        stock: 10,
+        initial: 1
+    },
     
     {   id:2,
         name:'Happy Face',
@@ -21,6 +23,8 @@ export const Products = [
         size: 'Regular',
         price: 5,
         stock: 15,
+        initial: 1
+
     },
 
     {   id:3,
@@ -32,6 +36,8 @@ export const Products = [
         size: 'Regular',
         price: 7,
         stock: 8,
+        initial: 1
+
     },
 
     {   id:4,
@@ -43,6 +49,8 @@ export const Products = [
         size: 'Regular',
         price: 10,
         stock: 13,
+        initial: 1
+
     },
 
     {   id:5,
@@ -54,6 +62,8 @@ export const Products = [
         size: 'Regular',
         price: 10,
         stock: 8,
+        initial: 1
+
     },
 
     {   id:4,
@@ -65,5 +75,7 @@ export const Products = [
         size: 'Regular',
         price: 10,
         stock: 15,
+        initial: 1
+
     },
 ]

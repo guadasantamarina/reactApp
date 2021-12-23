@@ -3,7 +3,7 @@ import { useState } from "react";
 const ItemCount = ({stock, onAdd, initial}) => {
 
     const [counter, setCount] = useState(1);
-    const q = document.querySelector('.counter')
+    
     
 
 
@@ -19,6 +19,8 @@ const ItemCount = ({stock, onAdd, initial}) => {
         }
     }
 
+
+
     return (
         <div class="counterDiv">
             <p class="counter">{counter}</p>
@@ -27,7 +29,7 @@ const ItemCount = ({stock, onAdd, initial}) => {
                 <button type="button" class="btnCounter" onClick={add}> + </button>
             </div>
             <div>
-                <button type="button" class="btnAddToCart" onClick={() => onAdd(q.innerText)}> Agregar al Carrito </button>
+                <button type="button" class="btnAddToCart" onClick={() => onAdd(counter)}> Agregar al Carrito </button>
             </div>
         </div>
     )

@@ -55,8 +55,9 @@ li, a{
 }
 
 .counterDiv{
+    background-color: aliceblue;
     margin: 5%;
-    border: royalblue 2px solid;
+    border: aliceblue 2px solid;
     border-radius: 10px;
     width: 12rem;
 }
@@ -127,7 +128,7 @@ li, a{
     border: none;
     border-radius: 15px;
     width: 300px;
-    height: 33rem;
+    height: 50rem;
     margin: 5%;
 }
 
