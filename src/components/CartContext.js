@@ -10,9 +10,10 @@ const CartContext = ({children}) => {
     const [cart, setCart] = useState([])
 
     const addItem = (item,quantity) => {
-        if (isInCart(item.id) === true){
+        if (isInCart(item.id)){
             console.log("Este item ya existe")
         }else{
+            console.log("Agregando Item")
             item.quantity = quantity;
             setCart([...cart, item]);
         }
@@ -23,16 +24,9 @@ const CartContext = ({children}) => {
 
     const isInCart = (id) => {
         console.log(id)
-        const filter = cart.filter((x)=> x.id === id)
-        console.log(filter)
-        console.log(filter.length)
-        if (filter.lenght === 1){
-            console.log("Item repetido")
-            return true
-        }else{
-            console.log("Item a agregar")
-            return false
-        }
+        const some = cart.some((x)=> x.id === id)
+        console.log(some)
+        
     }
 
 

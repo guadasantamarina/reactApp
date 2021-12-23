@@ -17,7 +17,6 @@ const ItemDetail = ({detail}) => {
 
     const addToCart = (q) => {
         addItem(detail,q)
-        console.log("Agregaste el producto al carrito")
         setQuantity(q)
     }
 
