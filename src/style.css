@@ -12,58 +12,69 @@ html, body, #root {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color:royalblue;
+    background-color:rgba(18, 10, 124, 0.719);
     padding: 3%;
+}
+
+.btn{
+    height:fit-content;
+    margin-right: 15px;
+}
+
+
+.btn, a{
+    color:rgba(11, 9, 41, 0.527);
+    text-decoration: none;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+}
+
+a:hover{
+    color: rgba(18, 10, 124, 0.719);
+}
+
+.categories{
+    padding-left: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #title{
     color: aliceblue;
-    font-size: 3rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+    font-size: 6rem;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 3px
+;}
 
 ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
-}
-
-
-li, a{
-    text-transform: uppercase;
-    text-decoration: none;
-    color:royalblue;
-    display: flex;
-    flex-direction: row;
-    margin: 2%;
-    width: max-content;
 }
 
 .cartIcon{
     color: aliceblue;
     margin: 7%;
+    margin-top: 80%;
     font-size: 2.5rem;
-}
-
-.greeting{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: royalblue;
-    font-size: 3rem;
-    padding: 5%;
+    align-items:center;
 }
 
 .counterDiv{
     background-color: aliceblue;
-    margin: 5%;
+    margin-top: 5%;
     border: aliceblue 2px solid;
     border-radius: 10px;
     width: 12rem;
 }
 
 .counter{
-    border: royalblue 1px solid;
+    border: rgba(18, 10, 124, 0.719) 1px solid;
     border-radius: 10px;
     margin: 7%;
     text-align: center;
@@ -80,7 +91,7 @@ li, a{
 .btnCounter{
     font-size: 1rem;
     color: aliceblue;
-    background-color: royalblue;
+    background-color: rgba(18, 10, 124, 0.719);
     border: none;
     width: 3.5rem;
     border-radius: 100%;
@@ -90,68 +101,141 @@ li, a{
 .btnAddToCart{
     font-size: 1rem;
     color: aliceblue;
-    background-color: royalblue;
+    background-color: rgba(18, 10, 124, 0.719);
     border: none;
     width: 100%;
     padding: 5%;
-
 }
 
 .cardProduct{
-    background-color: royalblue;
-    border: none;
+    background-color:rgba(18, 10, 124, 0.719);
     border-radius: 15px;
-    width: 250px;
-    height: 28rem;
+    width: 20rem;
+    height: 30rem;
     margin: 5%;
     text-align: center;
   
 }
-
-.titleProduct, .priceProduct, .detailTitle, .detailPrice{
+.titleProduct{
+    font-size: 3rem;
     color: aliceblue;
-    font-size: 2rem;
-    text-align: center;
-    padding: 5%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.priceProduct{
+    font-size: 2.5rem;
 }
 
 .detailLink{
     width: 100%;
-    color: royalblue;
+    color: rgba(18, 10, 124, 0.719);
     background-color: aliceblue;
 }
 
 .detailContainer{
     text-align: center;
-    background-color: royalblue;
+    background-color:rgba(18, 10, 124, 0.719);
     border: none;
     border-radius: 15px;
-    width: 300px;
-    height: 50rem;
     margin: 5%;
-}
-
-.detailDescription{
-    color: aliceblue;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 5%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.detailColorAndSize{
     display: flex;
     flex-direction: row;
-    color: aliceblue;
     justify-content: space-around;
 }
 
+.detailsTxt{
+    text-align: left;
+    padding: 5%;
+}
+
+.detailTitle{
+    font-family: 'Staatliches', cursive;
+    color: blanchedalmond;
+    font-size: 3rem;
+}
+
+.detailDescription{
+    color: blanchedalmond;
+}
+
+.imgProductDetail{
+    width: 25rem;
+    border-radius: 15px;
+    margin: 5%;
+}
+
 .imgProduct{
-    width: 10rem ;
+    width: 15rem;
     border-radius: 10px;
     margin: 5%;
 } 
+
+.cartLi{
+    display: flex;
+    flex-direction: column;
+}
+
+.cartContainer{
+    margin: 5%;
+    width: 90% auto;
+    background-color: rgba(18, 10, 124, 0.719) ;
+    padding: 5%;
+}
+
+.cartTitle{
+    font-size: 5rem;
+    color:aliceblue;
+    font-family: 'Staatliches', cursive;
+}
+.cartRow{
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.imgCart{
+    width: 8rem;
+    border-radius: 15px;
+}
+.btnRemove{
+    font-size: 1rem;
+    color: rgba(18, 10, 124, 0.719);
+    background-color:aliceblue;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    padding: 2%;
+}
+.cartProduct{
+    color: aliceblue;
+}
+.total{
+    text-align: center;
+    margin-top: 15%;
+    background-color: aliceblue;
+    color: rgba(18, 10, 124, 0.719);
+    padding: 3%;
+    border-radius: 15px;
+}
+.cartBtns{
+    text-align: center;
+}
+.btnCart{ 
+    text-align: center;
+    background-color: aliceblue;
+    color: rgba(18, 10, 124, 0.719);
+    border-radius: 15px;
+    border: none;
+    font-size: 2rem;
+    width:fit-content;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin: 2%;
+}
+.emptyCart{
+    color: aliceblue;
+    font-size: 3rem;
+}
 
 
 

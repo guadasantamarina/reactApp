@@ -8,7 +8,7 @@ const NavBar = () => {
         <NavLink to="/">
             <h1 id="title">Cap/tion</h1>
         </NavLink>
-        <ul>
+        <ul className="categories">
             <li>
                 <Button variant="light" className="btn" >
                     <Link to="/category/caps">Caps</Link>
